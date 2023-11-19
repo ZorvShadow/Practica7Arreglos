@@ -18,17 +18,15 @@ public class Garcia_ej4 {
         int[] sumasCol = new int[arr[0].length];
         int[] sumasRenglon = new int[arr.length];
         for (int y = 0; y < arr.length; y++) {
-            int sumaRenglon = 0;
-
-
             for (int x = 0; x < arr[y].length; x++) {
-
                 String separador = " | ";
                 if (x == arr[y].length - 1) separador = " | Suma: ";
 
                 System.out.printf("%4s", arr[y][x]);
                 System.out.print(separador);
+
                 //System.out.print("(x:" + x + ", y:" + +y + ")" + separador);
+
                 sumasRenglon[y] += arr[y][x];
                 sumasCol[x] += arr[y][x];
             }
@@ -54,7 +52,7 @@ public class Garcia_ej4 {
 
         for (int y = 0; y < matriz.length; y++) {
             for (int x = 0; x < matriz[y].length; x++) {
-                System.out.print("Ingresa el número en la posición (x:" + x + ", y:" + +y + "): ");
+                System.out.print("Ingresa el número en la posición (x:" + x + ", y:" + y + "): ");
                 matriz[y][x] = scanner.nextInt();
             }
             System.out.println();
