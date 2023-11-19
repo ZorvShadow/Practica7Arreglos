@@ -55,9 +55,7 @@ public class Garcia_ej4 {
         for (int y = 0; y < matriz.length; y++) {
             for (int x = 0; x < matriz[y].length; x++) {
                 System.out.print("Ingresa el número en la posición (x:" + x + ", y:" + +y + "): ");
-                matriz[y][x] = (int) (Math.random() * 10);
-                System.out.print(matriz[y][x] + "\n");
-                //matriz[y][x] = scanner.nextInt();
+                matriz[y][x] = scanner.nextInt();
             }
             System.out.println();
         }
